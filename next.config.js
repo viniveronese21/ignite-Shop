@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
 
-module.exports = nextConfig
+  images: {
+    domains: ["files.stripe.com"],
+  },
+
+  experimental: {
+    images: {
+      allowFutureImages: true,
+    },
+  },
+};
+
+module.exports = nextConfig;
